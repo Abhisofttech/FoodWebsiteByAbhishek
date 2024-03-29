@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My fOOd Area</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        body {
+            background-color: #000000;
+        }
+
+        .heighlight:hover {
+            color: rgb(236, 229, 153);
+            scale: 1.01;
+            text-shadow: 2px 2px #659cd9;
+        }
+
+
+        #carouselExampleDark,
+        .custom-carousel .carousel-inner,
+        .custom-carousel .carousel-item,
+        .custom-carousel .carousel-item img,
+        .carousel-inner img {
+            height: 80vh;
+            /* Example: 50% of the viewport height */
+        }
+
+        .card img {
+            height: 12rem;
+        }
+        footer{
+            background-color: #343232;
+        }
+        .shine:hover{
+            color: #fff;
+            text-shadow:0 0 10px #fff,
+                        0 0 20px #fff,
+                        0 0 40px #fff,
+                        0 0 60px #fff,
+                        0 0 80px #fff,
+                        0 0 100px #fff;
+        }
+       
+        .shine-head:hover {
+            color: #fdfefe;
+            text-shadow:0 0 10px #fff,
+                        0 0 20px #fff,
+                        0 0 40px #fff,
+                        0 0 60px #fff,
+                        0 0 80px #fff,
+                        0 0 100px #fff;
+        }
+        .contact-box input ,  .form-select{
+            background-color: #302a2a;
+        }
+
+        
+        @media screen and (max-width: 576px)  {
+            .contact-box{
+                width:100%;
+            }
+        }
+        @media screen and (min-width: 577px)  {
+            .contact-box{
+                width:75%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class=" container-fluid">
+        <!-- This is navbar  -->
+        <nav id="nav" class="navbar fixed-top navbar-expand-lg bg-body-tertiary  border border-light rounded-3"
+            data-bs-theme="dark">
+            <div class="container-fluid ">
+                <a class="navbar-brand ms-5  shine" href="#">My Foody Area </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mx-4 ">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link  shine" aria-current="page" href="#Hero1">Home</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link   shine" aria-current="page" href="#About">About</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link  shine" aria-current="page" href="#Services">Services</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link  shine" aria-current="page" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section id="Hero1">
+            <br><br><br>
+        </section>
+        <!-- This is crousal hero section  -->
+        <section id="Hero" class="Crousal  container-fluid  ">
+            <div id="carouselExampleDark" class="carousel carousel-light slide ">
+                <div class="carousel-indicators " id="carousel-indicators">
+
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner ">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="Images/Food1.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block ">
+                            <h5>Char-Grilled Capsicum Paneer Skewers</h5>
+                            <p>Savor the smoky goodness of our Char-Grilled Capsicum Paneer Skewers. Juicy chunks of
+                                paneer and fresh capsicums, alongside a colorful array of vegetables, all marinated in a
+                                tantalizing spice mix and grilled to perfection. The gentle char adds a smoky depth to
+                                the succulent paneer and crisp vegetables, creating a harmony of flavors. A delightful
+                                treat for those who crave a touch of warmth and smoke in their meals.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="Images/Food2.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block ">
+                            <h5>Classic Stir-Fried Chow Mein</h5>
+                            <p>Immerse yourself in the rich tapestry of flavors with our Classic Stir-Fried Chow Mein.
+                                Expertly tossed noodles with a medley of fresh, crunchy vegetables, all brought together
+                                with a savory sauce that dances on the palate. Each forkful promises a delightful mix of
+                                textures and tastes, capturing the essence of authentic Asian street food. Perfect for
+                                those who love their meals with a side of adventure.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Images/Food3.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block ">
+                            <h5>Gourmet International Feast Platter</h5>
+                            <p>Embark on a culinary world tour with our Gourmet International Feast Platter. A carefully
+                                curated selection of global delicacies, featuring bite-sized portions of exotic flavors
+                                from around the world. From the vibrant spices of India to the delicate sushi rolls of
+                                Japan, each plate is an invitation to explore the unknown. Ideal for the adventurous
+                                eater looking to indulge in a mosaic of gastronomic delights.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <!-- This is About section -->
+        <section id="About" class="container-fluid  my-2 text-light ">
+            <br>
+            <h1 class=" text-center my-5 text-primary "><span class="shine-head">Food You Get</span></h1>
+            <div class="container  ">
+                <div class="row gx-4 gy-4 ">
+                    <div class="col-md-4 col-lg-3 col-sm-6 col-12">
+                        <div class="card bg-dark text-light border border-light">
+                            <img src="Images/1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title  text-warning">Fine Dining</h5>
+                                <p class="card-text">Exquisite culinary journey, refined ambiance, impeccable service, every dish a masterpiece of precision and creativity, unforgettable flavors.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-sm-6 col-12">
+                        <div class="card bg-dark text-light border border-light">
+                            <img src="Images/2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title  text-warning">Casual Dining</h5>
+                                <p class="card-text">Comforting home-cooked goodness, laid-back atmosphere, diverse menu perfect for family dinners or catching up with friends.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-sm-6 col-12">
+                        <div class="card bg-dark text-light border border-light">
+                            <img src="Images/3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title  text-warning">Fast Food</h5>
+                                <p class="card-text">Quick, convenient bites bursting with flavor, classic burgers, fries, wraps, and salads for satisfying on-the-go cravings.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-sm-6 col-12">
+                        <div class="card bg-dark text-light border border-light">
+                            <img src="Images/4.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title  text-warning">Ethnic Cuisine</h5>
+                                <p class="card-text">Global culinary adventure, rich flavors, vibrant dishes from around the world, a celebration of authenticity and <br> tradition.  </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-sm-6 col-12">
+                        <div class="card bg-dark text-light border border-light">
+                            <img src="Images/5.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title  text-warning">Seafood</h5>
+                                <p class="card-text">Fresh ocean delights, succulent shrimp, scallops, lobster, and crispy fish, expertly prepared with coastal charm and <br> finesse.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-sm-6 col-12">
+                        <div class="card bg-dark text-light border border-light">
+                            <img src="Images/6.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title  text-warning">Steakhouse</h5>
+                                <p class="card-text">Juicy, tender cuts cooked to perfection, carnivore's dream, savory sides, and indulgent sauces for an unforgettable dining experience.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-sm-6 col-12">
+                        <div class="card bg-dark text-light border border-light">
+                            <img src="Images/7.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title  text-warning">Vegetarian and Vegan</h5>
+                                <p class="card-text">Plant-based creativity, vibrant flavors, nourishing ingredients, from fresh salads to innovative meat-free burgers and decadent desserts.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-sm-6 col-12">
+                        <div class="card bg-dark text-light border border-light">
+                            <img src="Images/8.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title  text-warning">Diner</h5>
+                                <p class="card-text">Plant-based creativity, vibrant flavors, nourishing ingredients, from fresh salads to innovative meat-free burgers and decadent desserts.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <!-- This is Services section-->
+        <section id="Services" class="container-fluid text-white my-1">
+            <div class="container px-4 py-5" id="hanging-icons">
+                <h1 class="pb-2 border-bottom text-primary text-center my-5"> <span class="shine-head">Services</span> </h1>
+                <div class="row g-4 py-5 row-cols-1 row-cols-lg-3 my-3">
+                  <div class="col d-flex align-items-start">
+                    <div class=" text-primary me-4">
+                      <h2 >1.</h2>
+                    </div>
+                    <div>
+                      <h3 class="fs-2 text-warning ">Dine-In </h3>
+                      <p> "Experience the ambiance and warmth of our dining room, where every meal is a celebration. Enjoy meticulously crafted dishes, impeccable service, and the joy of shared moments. Our dine-in service is not just about food; it's about creating memorable experiences."</p>
+                      
+                    </div>
+                  </div>
+                  <div class="col d-flex align-items-start">
+                    <div class=" text-primary me-4">
+                        <h2 >2.</h2>
+                      </div>
+                    <div>
+                      <h3 class="fs-2 text-warning">Takeout</h3>
+                      <p>"Savor your favorites on the go with our convenient takeout service. Perfectly packaged, enjoy the same high-quality meals at home or wherever you choose. Quick, easy, and delicious, it's your meal, your way."</p>
+                      
+                    </div>
+                  </div>
+                  <div class="col d-flex align-items-start">
+                    <div class=" text-primary me-4">
+                        <h2 >3.</h2>
+                      </div>
+                    <div>
+                      <h3 class="fs-2 text-warning">Delivery</h3>
+                      <p>"Indulge in the ultimate convenience with our delivery service. Delight in our full menu offerings delivered right to your doorstep, fresh and ready to enjoy. Perfect for cozy nights in, last-minute gatherings, or whenever you crave our flavors without stepping out."</p>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+        <!-- This is Contact Section -->
+        <div id="contact">
+            <br> <br> <br>
+        </div>
+        
+        <section id="Contact" class="container-fluid text-white my-2">
+            <h1 class="text-center border-bottom container text-primary "><span class="shine-head">Contact</span></h1>
+            <div class="container px-2  ">
+                <div class="information border rounded-2 p-2 text-center">
+                   <p class="text-primary shine"><i class="bi bi-telephone text-warning fs-4 "></i> +91 9874565432</p>
+                   <p class="text-primary shine"><i class="bi bi-instagram text-warning fs-4"></i> @MyFoodArea</p>
+                   <p class="text-primary shine"><i class="bi bi-envelope-fill text-warning fs-4"></i> MyFoodArea@gmail.com</p>
+                   <p class="text-primary shine"><i class="bi  bi-geo-alt text-warning fs-4"></i> Main Street, Chandni Chowk, Delhi-6</p>
+                   
+                </div>
+                <div class="container-fluid  d-flex justify-content-center">
+                <form class=" contact-box row g-3 form-floating my-4 border p-4 rounded-4 text-warning bg-tertiary" >
+                     <div class="col-md-6">
+                            <label for="inputEmail4" class="form-label">First Name</label>
+                            <input type="fname" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">Last Name</label>
+                        <input type="lname" class="form-control" id="inputEmail4">
+                      </div>
+                      
+                    <div class="col-md-12">
+                      <label for="inputEmail4" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="inputEmail4">
+                    </div>
+                    
+                    <div class="col-12">
+                      <label for="inputAddress" class="form-label">Address</label>
+                      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                    </div>
+                    <div class="col-12">
+                      <label for="inputAddress2" class="form-label">Address 2</label>
+                      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                    </div>
+                    <div class="col-md-6">
+                      <label for="inputCity" class="form-label">City</label>
+                      <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <div class="col-md-4">
+                      <label for="inputState" class="form-label">State</label>
+                      <select id="inputState" class="form-select">
+                        <option >Choose...</option>
+                        <option>Delhi</option>
+                        <option>Up</option>
+                        <option>Gujrat</option>
+                        <option>Mp</option>
+                        <option>Jharkhand</option>
+                        <option>Himachal</option>
+                        <option>Himachal</option>
+                        <option>Panjab</option>
+                        <option>Other</option>
+                      </select>
+                    </div>
+                    <div class="col-md-2">
+                      <label for="inputZip" class="form-label">Zip</label>
+                      <input type="text" class="form-control" id="inputZip">
+                    </div>
+                    <div class="col-12">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                          Check me out
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                  </form>
+            </div>
+        </div>
+        </section>
+        <!-- This is Footer Section -->
+        <section id="footer mt-3 " >
+            <footer class="py-3 mt-4 text-white text-center">
+                <h2 class="text-warning shine">My Food Area</h2>
+                <p>Term & Conditions</p>
+                <p>Privacy Policy</p>
+              <p>© 2024 Company, Inc.</p>
+              </footer>
+        </section>
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
